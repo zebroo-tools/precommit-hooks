@@ -15,3 +15,24 @@
   pass_filenames: false
   always_run: true
   args: []
+
+- id: zebroo-license-header
+  name: Insert Zebroo license header
+  entry: zebroo-license-header
+  language: python
+  types_or: [python, xml, javascript, ts, scss, css]
+  exclude: (^|/)__manifest__\.py$
+
+- id: zebroo-manifest-lint
+  name: Lint __manifest__.py (pylint-odoo)
+  entry: zebroo-manifest-lint
+  language: python
+  files: (^|/)__manifest__\.py$
+  additional_dependencies: [pylint-odoo]
+
+- id: zebroo-check-patchnotes
+  name: Check patchnotes for changed modules
+  entry: zebroo-check-patchnotes
+  language: python
+  pass_filenames: true
+  additional_dependencies: [pyyaml]

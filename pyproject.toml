@@ -6,6 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "precommit-hooks"
 version = "0.0.0"
 dependencies = ["pyyaml"]
+requires-python = ">=3.9"
 
 [project.scripts]
 make-odoo-robot-tests = "precommit_hooks.make_odoo_tests:main"
+zebroo-license-header = "precommit_hooks.license_header:main"
+zebroo-manifest-lint = "precommit_hooks.manifest_lint:main"
+zebroo-check-patchnotes = "precommit_hooks.check_patchnotes:main"
