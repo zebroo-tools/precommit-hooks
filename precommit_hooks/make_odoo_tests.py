@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Part of Zebroo GmbH. See LICENSE file for full copyright and licensing details (www.zebroo.de/license).
 # Generates output file containing unit and robo tests
 # The output should look like this:
 
@@ -28,8 +29,8 @@ def main():
     """
 
     workflows = {
-        "robo": "Odoo-Ninjas/git-workflows/.github/workflows/robotests.yml@v9.4",
-        "unit": "Odoo-Ninjas/git-workflows/.github/workflows/unittests.yml@v9.4",
+        "robo": "zebroo-tools/git-workflows/.github/workflows/robotests.yml@v9.4",
+        "unit": "zebroo-tools/git-workflows/.github/workflows/unittests.yml@v9.4",
     }
 
     current_dir = Path(

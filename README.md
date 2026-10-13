@@ -25,7 +25,7 @@ Sorts XML element attributes alphabetically using XSLT, and then formats the res
 ### 3. `github-workflow for robo and unit tests`
 
 ```
-  - repo: https://github.com/Odoo-Ninjas/precommit-hooks
+  - repo: https://github.com/zebroo-tools/precommit-hooks
     rev: main
     hooks:
       - id: make_odoo_robot_tests_githubworkflow
